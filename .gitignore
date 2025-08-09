@@ -1,0 +1,22 @@
+# Existing ignores
+.resources/
+.continue/
+.cursorrules
+.editorconfig
+instructions.md
+
+# Logs and runtime
+logs/
+TestCatalog/
+*.lrcat.lock
+*.lrcat-journal
+*.lrdata/
+*.agprefs
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node/Python (if used later)
+node_modules/
+.venv/
