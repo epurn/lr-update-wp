@@ -1,11 +1,17 @@
 local LrLogger = import 'LrLogger'
 local LrPathUtils = import 'LrPathUtils'
 local LrFileUtils = import 'LrFileUtils'
+local Log = require 'Log'
+
+-- Toggle to show/hide self-test menu item
+_G.SITE_PUBLISHER_ENABLE_SELF_TESTS = true
 
 local logger = LrLogger('site_publisher')
 logger:enable('logfile')
 
 logger:info('Site Publisher plugin initialized')
+
+-- TODO: In Step 4, initialize auth preferences/profiles.
 
 -- Write a simple line to a log file inside the plugin folder
 local plugin_dir = _PLUGIN.path
